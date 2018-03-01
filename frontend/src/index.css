@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container-fluid {
+  color: blue;
+  text-align: center;
+  padding-top: 5rem;
+  border: 5px solid #bbb;
+  width: 25rem;
+  align: center;
+  margin: auto
+}
+
+.button1 {
+  color: red;
+  border-radius: 50%;
+  height: 5rem;
+}
+
+ul {
+  list-style-type: none
+}
+
+li {
+  list-style-type: none
+}
+
+.songsList {
+  text-align: left
+}
+
+.audio-controls {
+  border-top: 2px solid #bbb;
+  background-color: lightpink
+}
