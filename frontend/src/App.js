@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import axios from 'axios'
 
 
-import {Route} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 import SongsList from './components/SongsList';
 import SongDetails from './components/SongDetails';
 
@@ -69,6 +69,10 @@ class App extends Component {
     return (
       <div className="App"> 
         <div className="container-fluid">
+        <header>
+            <h3> ~ &#160;pacific riviera&#160; ~ </h3>
+            <h4><Link to='/' className='link'> ~ &#160; songs for a day on the coast ~ </Link></h4>
+        </header>
 
         <Route exact path="/" render={()=><SongsList songs={this.props.songs} playSong={this.playSong} />}/>
         <Route path='/:songId'render={(props)=><SongDetails songs={this.props.songs} playSong={this.playSong} {...props}/> }/>
@@ -78,10 +82,11 @@ class App extends Component {
           <audio ref={(self) => {this.audioPlayer = self}}>
             <source src={this.props.songs[this.state.index].source} />
           </audio>
-          <button type="button"  onClick={() => { this.changeSong(-1) }} label='<<' disabled={this.state.index === 0} >&#9001;&#9001;</button>
-          <button type="button" onClick={() => { this.playPause(this.state.index, this.state.isPlaying) }} label='play'> {this.state.isPlaying ? 'pause' : 'play' } </button>
-          <button type="button"  onClick={() => { this.changeSong(+1) }} label='>>' disabled={this.state.index === this.props.songs.length - 1}>&#9002;&#9002;</button>
-       </div>
+          <button type="button" className='button1' onClick={() => { this.changeSong(-1) }} disabled={this.state.index === 0} >&#9001;&#9001;</button>
+          <button type="button" className='button1' onClick={() => { this.playPause(this.state.index, this.state.isPlaying) }} label='play'> {this.state.isPlaying ? 'pause' : 'play' } </button>
+          <button type="button" className='button1' onClick={() => { this.changeSong(+1) }}  disabled={this.state.index === this.props.songs.length - 1}>&#9002;&#9002;</button>
+        </div>
+        
        </div>
       </div>
     );

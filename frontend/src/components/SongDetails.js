@@ -10,11 +10,12 @@ class SongDetails extends Component {
         const { songId } = this.props.match.params
 
         return (
-            <div>
+            <div className='container'>
                 {/* <img src={this.props.songs.img}/> */}
-                <h1>{songs[songId].title}</h1>
-                <p>{songs[songId].description}</p>
-                <button onClick={() => { this.props.playSong(songId) }}> &#9658; </button>
+                <h3 className='song-title'>{songs[songId].title.toUpperCase()}</h3>
+                <img className='album-art' src={this.props.songs[songId].albumArt} alt='album art'/>
+                <h5>{songs[songId].description}</h5>
+                <button className='button2' onClick={() => { this.props.playSong(songId) }}> &#9658; </button>
                 
             </div> 
         )

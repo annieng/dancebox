@@ -2,36 +2,92 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+
 }
 .container-fluid {
-  color: blue;
+  color: #1E6C89;
+  background-color: #D1EFF5;
   text-align: center;
   padding-top: 5rem;
   border: 5px solid #bbb;
-  width: 25rem;
+  width: 40%;
   align: center;
   margin: auto
 }
 
+h4 .link {
+  color: #566A71;
+  text-decoration: none;
+}
+
+.link {
+  color: #1E6C89;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #FBC7C3;
+  text-decoration: none
+}
+
 .button1 {
-  color: red;
-  border-radius: 50%;
+  border-radius: 10%;
   height: 5rem;
+  width: 6rem;
+  background-color:#FEEDEB
+  ;
 }
 
-ul {
-  list-style-type: none
+.button2 {
+  color: blue;
+  border-radius: 10%;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  background-color: #DFF2F6;
 }
 
-li {
-  list-style-type: none
+table {
+  margin: 5rem;
+  width: 70%;
+  border: none
 }
 
-.songsList {
-  text-align: left
+th {
+  border-bottom: 1px dotted #bbb;
+}
+
+td {
+  border: none;
 }
 
 .audio-controls {
   border-top: 2px solid #bbb;
-  background-color: lightpink
+  background-color: #FBC7C3;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.song-title {
+  color: #1E6C89;
+  font-weight: 550;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  letter-spacing: 0.25rem;
+}
+
+.album-art {
+  max-width: 100%;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

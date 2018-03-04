@@ -35,7 +35,6 @@ app.get('/', (req, res) => {
   if (songs) res.json(somngs)
   else res.json({ status: 'error', error: 'songs not found' })
 
-
 })
 
 app.listen(port, () => {
