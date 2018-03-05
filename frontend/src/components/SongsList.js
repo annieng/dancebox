@@ -38,8 +38,8 @@ class SongsListItem extends Component {
             <tbody>
                 <tr>
                     <td><button className='button2' onClick={() => { this.props.playSong(this.props.id) }}> &#9658; </button></td>
-                    <td><Link to={`/${this.props.song.id}`} className='link'>{this.props.song.title}</Link></td>
-                    <td>{this.props.song.artist}</td>
+                    <td><Link to={`/${this.props.song.id}`} className='link'>{this.props.song.title.toUpperCase()}</Link></td>
+                    <td>{this.props.song.artist.toUpperCase()}</td>
                 </tr>
             </tbody>    
         )

@@ -5,11 +5,11 @@ body {
 
 }
 .container-fluid {
-  color: #1E6C89;
+  color: #2A96BD;
   background-color: #D1EFF5;
   text-align: center;
   padding-top: 5rem;
-  border: 5px solid #bbb;
+  border: 2px solid #1E6C89;
   width: 40%;
   align: center;
   margin: auto
@@ -21,7 +21,7 @@ h4 .link {
 }
 
 .link {
-  color: #1E6C89;
+  color: #2A96BD;
   text-decoration: none;
 }
 
@@ -34,22 +34,44 @@ h4 .link {
   border-radius: 10%;
   height: 5rem;
   width: 6rem;
-  background-color:#FEEDEB
-  ;
+  background-color:#FEEDEB;
+  border-color: #1E6C89
+}
+
+.button1:disabled {
+  border-radius: 10%;
+  height: 5rem;
+  width: 6rem;
+  background-color:#DFDFDF;
+  border-color: #F0B3AE;
 }
 
 .button2 {
-  color: blue;
+  color: #1E6C89;
   border-radius: 10%;
+  border-color: #1E6C89;
   padding: 1rem;
   margin-top: 0.75rem;
   background-color: #DFF2F6;
 }
 
+.button3 {
+  border-radius: 10%;
+  height: 5rem;
+  width: 10rem;
+  background-color: #DFF2F6;
+  color: #1E6C89;
+  border: 1px solid #1E6C89;
+}
+
 table {
   margin: 5rem;
   width: 70%;
-  border: none
+  border: none;
+}
+
+tbody {
+  padding-bottom: 10rem;
 }
 
 th {
@@ -61,7 +83,7 @@ td {
 }
 
 .audio-controls {
-  border-top: 2px solid #bbb;
+  border-top: 2px solid #1E6C89;
   background-color: #FBC7C3;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
