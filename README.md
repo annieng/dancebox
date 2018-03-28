@@ -1,4 +1,4 @@
-pacific riveria
+## pacific riveria ## 
 
 a simple audio player preloaded with songs for a dreamy day on the west coast 
 some local and not so local favorites selected
@@ -8,7 +8,7 @@ sounds from vancouver
 
 
 
------- demo ------
+**demo**
 
 ![demo](https://github.com/annieng/pacific-riviera/blob/master/frontend/public/pacific-riviera.gif)
 
