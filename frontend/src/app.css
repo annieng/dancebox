@@ -1,4 +1,8 @@
+body {
+  margin-top: 10rem;
+}
 .container-fluid {
+  margin-top: 10rem;
   color: blue
 }
 
