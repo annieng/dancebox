@@ -2,14 +2,9 @@
 
 a simple audio player preloaded with songs for a dreamy day on the west coast 
 
-some local and not so local favorites selected
+sounds from some local and not so local favorites selected
 
-Vibes coming out from our sweet spot on the west coast 
-
-~~ pacific riviera ~~ 
-
-sounds from vancouver
-
+vibes coming out from our very own pacific riviera 
 
 
 **demo**
